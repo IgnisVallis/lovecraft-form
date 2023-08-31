@@ -1,0 +1,91 @@
+:root{
+    --gray1: #a0909093;
+}
+@font-face {
+    font-family: 'antigua';
+    src: url(fonts/papyrus.ttf) format(truetype);
+}
+@font-face{
+ font-family: 'melted';
+ src: url(fonts/Melted\ Monster.ttf) format(truetype);
+}
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+main{
+    height: 100vh;
+}
+
+.img-container{
+    position: relative;
+    font-size: 2rem;
+ 
+   
+}
+.presentation_p-container{
+    position: absolute;
+    top: 10%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    background-color: var(--gray1);
+    width: 100%;
+  
+}
+.presentation_p-container p{
+    text-align: center;
+    font-family: 'melted','sans-serif';
+    font-size: 4rem;
+
+}
+
+
+h1{
+    text-align: center;
+    font-family: 'antigua','sans-serif';
+}
+
+h2{
+    font-family: 'antigua', 'sans-serif';
+}
+
+.content{
+    display: flex;
+
+}
+.form-container{
+  
+    width: 100%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.conteiner_form{
+   display: grid;
+   width: 100%;
+   grid-template-columns: repeat(2,35rem);
+   grid-template-rows: repeat(auto-fit,1fr);
+   align-self: center;
+   background: var(--gray1);
+   align-self: center;
+   margin-top: 7rem;
+   padding-left: 4rem;
+}
+
+label{
+    display: block;
+    font-size: 2em;
+}
+
+input{
+    height: 2rem;
+    width: 20rem;
+    margin-bottom: 2rem;
+   
+}
